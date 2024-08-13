@@ -8,6 +8,8 @@ import { cookieToInitialState } from "wagmi"
 import { config } from "@/config"
 import AppKitProvider from "@/context"
 
+import Header from "@/components/Header"
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -24,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AppKitProvider initialState={initialState}>{children}</AppKitProvider>
+        <AppKitProvider initialState={initialState}>
+          <Header />
+          {children}
+        </AppKitProvider>
       </body>
     </html>
   )

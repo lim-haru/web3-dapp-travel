@@ -21,6 +21,7 @@ createWeb3Modal({
   projectId,
   enableAnalytics: true,
   enableOnramp: false,
+  themeMode: "light",
 })
 
 export default function AppKitProvider({ children, initialState }: { children: ReactNode; initialState?: State }) {
