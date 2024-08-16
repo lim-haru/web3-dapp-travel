@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Header() {
   return (
-    <header className="py-4 xl:py-6 text-black bg-slate-200">
+    <header className="py-4 xl:py-6 text-gray-900 bg-gray-100 dark:text-white dark:bg-gray-900">
       <div className="container mx-auto flex justify-between items-center">
         <Image alt="Logo" src="/logo.png" width={70} height={70} />
         <Link href="/" className="hidden sm:block">
