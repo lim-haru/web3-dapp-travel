@@ -16,7 +16,7 @@ export const trips: Trip[] = [
     title: "Indonesia: Bali & Komodo",
     description:
       "Un viaggio per scoprire l'Indonesia, l'isola di Bali e Komodo tra templi, foreste e sessioni di yoga, passando per spiagge da sogno e piccoli Godzilla!",
-    image: `${gatewayUrl}/ipfs/QmNpGUYxbbpM2BFNBwJzDjQxT5Zs5Y7dFDscvdQJkL1U8j/Indonesia.jpeg`,
+    image: `${gatewayUrl}/ipfs/QmbLjJJkULgyxf6b3tPau6Tu3opXneLCN8t3mwiRC7VFSY/Indonesia.jpeg`,
     price: 1.37,
   },
   {
@@ -25,7 +25,7 @@ export const trips: Trip[] = [
     title: "Perù: Machu Picchu Dream",
     description:
       "Un viaggio nel cuore dell'America Latina attraverso la storia ed i luoghi più emblematici di un paese che vi farà innamorare",
-    image: `${gatewayUrl}/ipfs/QmNpGUYxbbpM2BFNBwJzDjQxT5Zs5Y7dFDscvdQJkL1U8j/Perù.jpeg`,
+    image: `${gatewayUrl}/ipfs/QmbLjJJkULgyxf6b3tPau6Tu3opXneLCN8t3mwiRC7VFSY/Perù.jpeg`,
     price: 1.33,
   },
   {
@@ -33,7 +33,7 @@ export const trips: Trip[] = [
     place: "Turchia",
     title: "Turchia: Cappadocia e Istanbul",
     description: "La Cappadocia è un posto unico al mondo, siete pronti a vivere il sogno?",
-    image: `${gatewayUrl}/ipfs/QmNpGUYxbbpM2BFNBwJzDjQxT5Zs5Y7dFDscvdQJkL1U8j/Turchia.jpeg`,
+    image: `${gatewayUrl}/ipfs/QmbLjJJkULgyxf6b3tPau6Tu3opXneLCN8t3mwiRC7VFSY/Turchia.jpeg`,
     price: 0.89,
   },
   {
@@ -41,7 +41,7 @@ export const trips: Trip[] = [
     place: "Stati Uniti",
     title: "Stati Uniti: California Dreaming",
     description: "Il viaggio per eccellenza tra spiagge, scogliere, sequoie e tanto altro",
-    image: `${gatewayUrl}/ipfs/QmNpGUYxbbpM2BFNBwJzDjQxT5Zs5Y7dFDscvdQJkL1U8j/Stati_Uniti.jpeg`,
+    image: `${gatewayUrl}/ipfs/QmbLjJJkULgyxf6b3tPau6Tu3opXneLCN8t3mwiRC7VFSY/Stati_Uniti.jpeg`,
     price: 1.21,
   },
   {
@@ -49,7 +49,7 @@ export const trips: Trip[] = [
     place: "Kirghizistan",
     title: "Kirghizistan - Lungo la Via della Seta",
     description: "Un viaggio nel cuore della natura sconfinata del Kirghizistan",
-    image: `${gatewayUrl}/ipfs/QmNpGUYxbbpM2BFNBwJzDjQxT5Zs5Y7dFDscvdQJkL1U8j/Kirghizistan.jpeg`,
+    image: `${gatewayUrl}/ipfs/QmbLjJJkULgyxf6b3tPau6Tu3opXneLCN8t3mwiRC7VFSY/Kirghizistan.jpeg`,
     price: 1.13,
   },
   {
@@ -58,7 +58,7 @@ export const trips: Trip[] = [
     title: "Sri Lanka: Avventura on the road",
     description:
       "Un territorio magico, ancora incontaminato, tra natura e spiagge selvagge. Prontə per un on the road alla scoperta dello Sri Lanka?",
-    image: `${gatewayUrl}/ipfs/QmNpGUYxbbpM2BFNBwJzDjQxT5Zs5Y7dFDscvdQJkL1U8j/Sri_Lanka.jpeg`,
+    image: `${gatewayUrl}/ipfs/QmbLjJJkULgyxf6b3tPau6Tu3opXneLCN8t3mwiRC7VFSY/Sri_Lanka.jpeg`,
     price: 1.09,
   },
   {
@@ -67,7 +67,16 @@ export const trips: Trip[] = [
     title: "Islanda del Sud",
     description:
       "On the road attraverso i luoghi più remoti e magici del selvaggio sud d'Islanda: la Laguna glaciale, il bagno nel fiume caldo, il sole di mezzanotte e molto altro...",
-    image: `${gatewayUrl}/ipfs/QmNpGUYxbbpM2BFNBwJzDjQxT5Zs5Y7dFDscvdQJkL1U8j/Islanda.jpeg`,
+    image: `${gatewayUrl}/ipfs/QmbLjJJkULgyxf6b3tPau6Tu3opXneLCN8t3mwiRC7VFSY/Islanda.jpeg`,
     price: 0.89,
+  },
+  {
+    id: 8,
+    place: "Corea del Sud",
+    title: "Corea del Sud",
+    description:
+      "Un viaggio alla scoperta della Corea del Sud, una terra sospesa tra tradizione e hi tech futuristico, dalla metropoli di Seoul agli incredibili templi di Gyeongju. Preparatevi a scoprire questo Paese incredibile!",
+    image: `${gatewayUrl}/ipfs/QmbLjJJkULgyxf6b3tPau6Tu3opXneLCN8t3mwiRC7VFSY/Corea_del_Sud.jpeg`,
+    price: 0.0001,
   },
 ];
