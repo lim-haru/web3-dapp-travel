@@ -1,10 +1,11 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Address, parseEther } from "viem"
-import { type BaseError, useSendTransaction } from "wagmi"
+import { type Address, parseEther } from "viem"
+import { type BaseError, useSendTransaction, useWaitForTransactionReceipt } from "wagmi"
 import { toHex } from "viem/utils"
 import Notification from "./Notification"
+import TransactionStatus from "./TransactionStatus"
 
 export default function PurchaseButton({ title, price }: { title: string; price: number }) {
   const { data: hash, error, isPending, sendTransaction } = useSendTransaction()
@@ -26,6 +27,10 @@ export default function PurchaseButton({ title, price }: { title: string; price:
     }
   }, [error])
 
+  const { isLoading: isConfirming, isSuccess: isConfirmed } = useWaitForTransactionReceipt({
+    hash,
+  })
+
   return (
     <div>
       <button
@@ -45,6 +50,7 @@ export default function PurchaseButton({ title, price }: { title: string; price:
         </svg>
       </button>
       {errorMessage && <Notification message={errorMessage} onClose={() => setErrorMessage(null)} />}
+      {hash && <TransactionStatus hash={hash} isConfirming={isConfirming} isConfirmed={isConfirmed} />}
     </div>
   )
 }
